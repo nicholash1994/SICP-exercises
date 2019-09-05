@@ -28,8 +28,9 @@
 ;
 ; [inductive step]
 ; Let n > 1 and suppose that
-; (A 1 n) is equal to (expt 2 n),
-; by definition (A 1 n) evaluates to
+; (A 1 k) is equal to (expt 2 k)
+; for all positive k < n.
+; By definition (A 1 n) evaluates to
 ; (A 0 (A 1 (- n 1)))
 ; which in turn evaluates to
 ; (* 2 (A 1 (- n 1))). By the inductive hypothesis,
