@@ -25,7 +25,7 @@ If n = 1, (x - y)/sqrt(5) = (1 + sqrt(5) - 1 + sqrt(5))/(2*sqrt(5)) =
 Let n > 1 and suppose that for all positive k < n, x^n - y^n = Fib(n).
 
 Note that y^2 = (1 - sqrt(5))^2/4 = (1 - 2sqrt(5) + 5)/4 = 
-6/4 - 2sqrt(5)/4 = 1 + 1/2 - sqrt(5)/2 = 1 + (1 - sqrt(5)/2 = y + 1.
+6/4 - 2sqrt(5)/4 = 1 + 1/2 - sqrt(5)/2 = 1 + (1 - sqrt(5)/2) = y + 1.
 The same holds true for x.
 
 Then Fib(n) = Fib(n - 1) + Fib(n - 2) 
