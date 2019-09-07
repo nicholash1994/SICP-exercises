@@ -1,0 +1,63 @@
+A.                      (cc 11 5)          Total: B
+                            |
+                 |-------------------------|
+            (cc 11 4)                    (cc -39 5) 
+                 |
+         |--------------|
+    (cc 11 3)         (cc -14 4)
+
+B.                     (cc 11 3)     Total: C + D + E
+             ------------|   |-------------
+             |                            |
+          (cc 1 3)                       (cc 11 2)
+        ----|-----                       ----|-----
+        |        |                       |        |
+   (cc 1 2)    (cc -9 3)            (cc 11 1)   (cc 6 2)
+
+
+
+C.                       (cc 1 2)         Total: 1
+                            |
+                |-----------|-------------|
+            (cc 1 1)                    (cc -4 2)
+                |                           
+     |-----------------|        
+ (cc 1 0)            (cc 0 1)
+
+
+
+D.                      (cc 11 1)       Total: 1
+                            |
+                |----------------------|
+            (cc 11 0)             (cc 10 1)
+                                  (cc 9 1)
+                                       |
+                                       .
+                                       .
+                                       .
+                                       |
+                                  (cc 0 1)
+
+
+
+E.                      (cc 6 2)        Total: 2
+                            |
+                    |----------------|
+                (cc 6 1)           (cc 1 2)
+                    |                |
+                (cc 5 1)       |-------------|
+                    |        (cc 1 1)       (cc -4 1)
+                    .           |
+                    .        (cc 0 1)
+                    .
+                    .
+                    |
+                (cc 0 1) 
+
+So there are four ways to make change with 11 cents.
+
+Assuming that (cc n 4) and (cc n 5) require roughly the same number of steps
+i.e. they differ by some constant factor k, then the order of growth should be 
+roughly exponential. Since (cc (+ n 25) 5) = (+ (cc n 5) (cc (+ n 25) 4)), 
+then the number of steps would increases by a factor of 1 + k every time n
+increases by 25 cents
