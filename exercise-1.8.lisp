@@ -7,9 +7,9 @@
         (cbrt-iter (improve guess x) guess x)))
 
 (define (good-enough? guess prev-guess x)
-    (< (abs (/ (- guess prev-guess) guess)) 0.001)
+    (< (abs (/ (- guess prev-guess) guess)) 0.001))
 
 (define (improve guess x)
-    (/ (+ (/ x (square guess)) (* 2 y)) 3))
+    (/ (+ (/ x (square guess)) (* 2 guess)) 3))
 
 (define (cbrt x) (cbrt-iter 1.0 0.0 x))
