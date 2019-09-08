@@ -56,7 +56,7 @@ E.                      (cc 6 2)        Total: 2
 
 So there are four ways to make change with 11 cents.
 
-Assuming that (cc n 4) and (cc n 5) require roughly the same number of steps
+Assuming that (cc n 4) and (cc n 5) have roughly the same time complexity
 i.e. they differ by some constant factor k, then the order of growth should be 
 roughly exponential. Since (cc (+ n 25) 5) = (+ (cc n 5) (cc (+ n 25) 4)), 
 then the number of steps would increases by a factor of 1 + k every time n
